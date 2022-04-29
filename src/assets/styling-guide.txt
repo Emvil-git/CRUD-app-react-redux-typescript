@@ -1,0 +1,36 @@
+#root
+    <App>
+        .App div
+            .App__heading span
+
+            <InputField>
+                .input form
+                    .input__box "name" input
+                    .input__box "salary" input
+                    .input__box "age" input
+                    .input__btn button
+
+            <error message span>
+
+            <EmpList>
+                .emplist div
+                    .emplist__title span
+                    .emplist__header div
+                        .emplist__title "id" span
+                        .emplist__title "name" span 
+                        .emplist__title "salary" span 
+                        .emplist__title "age" span 
+                        .emplist__title "dateAdded" span 
+                        .emplist__title "spacer" span
+                    .emplist__entries div
+                    
+                        <EF> ...{number of entries}
+                            .emplist__entry form
+                                .emplist__entry--cell "id" span
+                                .emplist__entry--cell "name" span | input
+                                .emplist__entry--cell "salary" span | input
+                                .emplist__entry--cell "age" span | input
+                                .emplist__entry--cell "dateAdded" span
+                                .emplist__entry--cell "actions" span
+                                    .emplist__entry--cell--action "Edit" span
+                                    .emplist__entry--cell--action "Delete" span

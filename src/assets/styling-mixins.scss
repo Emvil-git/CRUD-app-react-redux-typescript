@@ -1,0 +1,66 @@
+@mixin flex-center-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin neumorphic-btn{
+  box-shadow: 3px 3px 3px #d1d4db, -2px -2px 3px #f1f1f1; 
+  border: none;
+  border-radius: 25px;
+  background-color: #eaeaea;
+  transition-duration: 0.1s;
+  font-family: 'Inconsolata', monospace;
+  font-size: 14px;
+}
+
+@mixin neumorphic-btn-hover{
+  background-color: #efefef;
+}
+
+@mixin neumorphic-btn-active{
+  background-color: #e7e7e7;
+  border: 0.5px solid #d3d3db;
+  box-shadow: none;
+}
+
+@mixin neupmorphic-input{
+  background-color: #f0f0f0;
+  border: none;
+  box-shadow: inset 3px 3px 3px #cacccf, inset -2px -2px 3px #f1f1f1;
+  border-radius: 25px;
+  font-family: 'Inconsolata', monospace;
+}
+
+@mixin neumorphic-input-focus{
+  outline: 1px solid #d3d3db;
+  background-color: #f6f6f6;
+}
+
+@mixin box-sizing($box-sizing) {
+    @if $box-sizing == "border-box" {
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      box-sizing: border-box;  
+    } @else if $box-sizing == "content-box" {
+      -webkit-box-sizing: content-box;
+      -moz-box-sizing: content-box;
+      -o-box-sizing: content-box;
+      -ms-box-sizing: content-box;
+      box-sizing: content-box;  
+    } @else if $box-sizing == "inherit" {
+      -webkit-box-sizing: inherit;
+      -moz-box-sizing: inherit;
+      -o-box-sizing: inherit;
+      -ms-box-sizing: inherit;
+      box-sizing: inherit;  
+    } @else {
+      -webkit-box-sizing: initial;
+      -moz-box-sizing: initial;
+      -o-box-sizing: initial;
+      -ms-box-sizing: initial;
+      box-sizing: initial; 
+    }
+  }
